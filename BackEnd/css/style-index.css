@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,25 +12,66 @@ body {
     justify-content: center;
 }
 
+tbody {
+    overflow-y: scroll;
+    height: 400px;
+    display: block;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+tbody::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+tbody::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .2) 75%, transparent 75%, transparent)
+}
+
 th,
 td {
     font-size: 18px;
     padding: 10px;
+    border-radius: 5px;
 }
 
 th {
     background: #555;
     color: #fff;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
 }
 
 td {
-    background: #eee;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #272727;
 }
 
 a {
-    text-decoration: none;
-    transition: 0.2s ease;
-    color: #3f75c5;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
 }
 
 td:nth-child(7)>a {
@@ -44,13 +86,22 @@ p {
     font-style: italic;
 }
 
+input {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #000000;
+}
+
 input,
 textarea,
 button {
     padding: 10px;
     display: block;
     min-height: 30px;
-    width: 250px;
+    width: 120px;
     margin-bottom: 10px;
 }
 
@@ -68,4 +119,148 @@ button {
 .wrapper-radio {
     display: flex;
     justify-content: space-between;
+}
+
+.next-btn {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previus-btn {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-navigate-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.search-form {
+    display: flex;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.refresh {
+    border: 4px solid #c22a2a;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.search {
+    border: 4px solid #67DD0A;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.search:focus {
+    border: 2px solid white;
+}
+
+.wrapper-form {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
+.input-data {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.wrapper-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-div-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-data {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.create-btn {
+    margin-top: 80px;
+}
+
+.small-data {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.tittle {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.margin-checkbox {
+    margin-top: 10px;
+}
+
+.wrapper-serch {
+    margin-right: -50%;
+}
+
+#idSupporto {
+    margin-top: 16px;
+}
+
+.cancel {
+    color: crimson;
+    text-decoration: none;
+}
+
+.modify {
+    color: coral;
+    text-decoration: none;
+}
+
+.search-input {
+    border-bottom: 2px solid white;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+body>div.wrapper-serch>form>input.search-input {
+    color: white;
 }
